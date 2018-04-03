@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_above="@id/bDecide"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/bDecide"
+        android:background="@color/background_activity"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20sp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image_for_dinner"
+            android:src="@drawable/plate" />
+
+        <TextView
+            android:id="@+id/tvDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/dinner_defaultText"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etNewFood"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="@string/etNewFoodHint" />
+
+        <Button
+            android:id="@+id/bAdd"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:onClick="clickOperation"
+            android:text="@string/btn_add_food_text"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
@@ -14,10 +50,11 @@
         android:id="@+id/bDecide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:background="@color/colorPrimary"
+        android:onClick="clickOperation"
         android:text="@string/btn_decide"
         android:textColor="@android:color/white" />
-    
+
 </RelativeLayout>

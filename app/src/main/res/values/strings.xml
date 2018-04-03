@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MUM L3A2 Dinner Decider</string>
     <string name="btn_decide">DECIDE!</string>
+    <string name="image_for_dinner">image for dinner</string>
+    <string name="dinner_defaultText">Hamburger</string>
+    <string name="etNewFoodHint">add new food...</string>
+    <string name="btn_add_food_text">Add food</string>
 </resources>
